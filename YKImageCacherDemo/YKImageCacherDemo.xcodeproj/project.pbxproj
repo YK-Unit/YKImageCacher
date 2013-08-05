@@ -1,0 +1,395 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		98097FCC17AF3D0E007E3DB5 /* SecondCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98097FCB17AF3D0E007E3DB5 /* SecondCell.xib */; };
+		98097FCE17AF41AE007E3DB5 /* Images.plist in Resources */ = {isa = PBXBuildFile; fileRef = 98097FCD17AF41AE007E3DB5 /* Images.plist */; };
+		98A3666217AB6E78003156C5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98A3666117AB6E78003156C5 /* UIKit.framework */; };
+		98A3666417AB6E78003156C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98A3666317AB6E78003156C5 /* Foundation.framework */; };
+		98A3666617AB6E78003156C5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98A3666517AB6E78003156C5 /* CoreGraphics.framework */; };
+		98A3666C17AB6E78003156C5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 98A3666A17AB6E78003156C5 /* InfoPlist.strings */; };
+		98A3666E17AB6E78003156C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A3666D17AB6E78003156C5 /* main.m */; };
+		98A3667217AB6E78003156C5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A3667117AB6E78003156C5 /* AppDelegate.m */; };
+		98A3667417AB6E78003156C5 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 98A3667317AB6E78003156C5 /* Default.png */; };
+		98A3667617AB6E78003156C5 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98A3667517AB6E78003156C5 /* Default@2x.png */; };
+		98A3667817AB6E78003156C5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98A3667717AB6E78003156C5 /* Default-568h@2x.png */; };
+		98A3667B17AB6E78003156C5 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A3667A17AB6E78003156C5 /* FirstViewController.m */; };
+		98A3667D17AB6E78003156C5 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 98A3667C17AB6E78003156C5 /* first.png */; };
+		98A3667F17AB6E78003156C5 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98A3667E17AB6E78003156C5 /* first@2x.png */; };
+		98A3668217AB6E78003156C5 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A3668117AB6E78003156C5 /* SecondViewController.m */; };
+		98A3668417AB6E78003156C5 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 98A3668317AB6E78003156C5 /* second.png */; };
+		98A3668617AB6E78003156C5 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98A3668517AB6E78003156C5 /* second@2x.png */; };
+		98A3668917AB6E78003156C5 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98A3668717AB6E78003156C5 /* FirstViewController.xib */; };
+		98A3668C17AB6E78003156C5 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98A3668A17AB6E78003156C5 /* SecondViewController.xib */; };
+		98A3669517AB6EAF003156C5 /* YKImageCacher.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A3669417AB6EAF003156C5 /* YKImageCacher.m */; };
+		98A3669A17AB784A003156C5 /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A3669917AB784A003156C5 /* NSString+Hash.m */; };
+		98A3669C17AB8A7C003156C5 /* unit.png in Resources */ = {isa = PBXBuildFile; fileRef = 98A3669B17AB8A7C003156C5 /* unit.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		98097FCB17AF3D0E007E3DB5 /* SecondCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondCell.xib; sourceTree = "<group>"; };
+		98097FCD17AF41AE007E3DB5 /* Images.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Images.plist; sourceTree = "<group>"; };
+		98A3665E17AB6E78003156C5 /* YKImageCacherDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YKImageCacherDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		98A3666117AB6E78003156C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		98A3666317AB6E78003156C5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		98A3666517AB6E78003156C5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		98A3666917AB6E78003156C5 /* YKImageCacherDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "YKImageCacherDemo-Info.plist"; sourceTree = "<group>"; };
+		98A3666B17AB6E78003156C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		98A3666D17AB6E78003156C5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		98A3666F17AB6E78003156C5 /* YKImageCacherDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YKImageCacherDemo-Prefix.pch"; sourceTree = "<group>"; };
+		98A3667017AB6E78003156C5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		98A3667117AB6E78003156C5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		98A3667317AB6E78003156C5 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		98A3667517AB6E78003156C5 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		98A3667717AB6E78003156C5 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		98A3667917AB6E78003156C5 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		98A3667A17AB6E78003156C5 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		98A3667C17AB6E78003156C5 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		98A3667E17AB6E78003156C5 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		98A3668017AB6E78003156C5 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		98A3668117AB6E78003156C5 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		98A3668317AB6E78003156C5 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		98A3668517AB6E78003156C5 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		98A3668817AB6E78003156C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstViewController.xib; sourceTree = "<group>"; };
+		98A3668B17AB6E78003156C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondViewController.xib; sourceTree = "<group>"; };
+		98A3669317AB6EAF003156C5 /* YKImageCacher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YKImageCacher.h; path = ../YKImageCacher/YKImageCacher.h; sourceTree = "<group>"; };
+		98A3669417AB6EAF003156C5 /* YKImageCacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YKImageCacher.m; path = ../YKImageCacher/YKImageCacher.m; sourceTree = "<group>"; };
+		98A3669817AB784A003156C5 /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
+		98A3669917AB784A003156C5 /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
+		98A3669B17AB8A7C003156C5 /* unit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unit.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		98A3665B17AB6E78003156C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98A3666217AB6E78003156C5 /* UIKit.framework in Frameworks */,
+				98A3666417AB6E78003156C5 /* Foundation.framework in Frameworks */,
+				98A3666617AB6E78003156C5 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		98097FCF17AF5322007E3DB5 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				98A3669B17AB8A7C003156C5 /* unit.png */,
+				98A3667C17AB6E78003156C5 /* first.png */,
+				98A3667E17AB6E78003156C5 /* first@2x.png */,
+				98A3668317AB6E78003156C5 /* second.png */,
+				98A3668517AB6E78003156C5 /* second@2x.png */,
+				98097FCD17AF41AE007E3DB5 /* Images.plist */,
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
+		98A3665517AB6E78003156C5 = {
+			isa = PBXGroup;
+			children = (
+				98A3669217AB6E84003156C5 /* YKImageCacher */,
+				98A3666717AB6E78003156C5 /* YKImageCacherDemo */,
+				98A3666017AB6E78003156C5 /* Frameworks */,
+				98A3665F17AB6E78003156C5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		98A3665F17AB6E78003156C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				98A3665E17AB6E78003156C5 /* YKImageCacherDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		98A3666017AB6E78003156C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				98A3666117AB6E78003156C5 /* UIKit.framework */,
+				98A3666317AB6E78003156C5 /* Foundation.framework */,
+				98A3666517AB6E78003156C5 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		98A3666717AB6E78003156C5 /* YKImageCacherDemo */ = {
+			isa = PBXGroup;
+			children = (
+				98A3667017AB6E78003156C5 /* AppDelegate.h */,
+				98A3667117AB6E78003156C5 /* AppDelegate.m */,
+				98A3667917AB6E78003156C5 /* FirstViewController.h */,
+				98A3667A17AB6E78003156C5 /* FirstViewController.m */,
+				98A3668017AB6E78003156C5 /* SecondViewController.h */,
+				98A3668117AB6E78003156C5 /* SecondViewController.m */,
+				98A3668717AB6E78003156C5 /* FirstViewController.xib */,
+				98A3668A17AB6E78003156C5 /* SecondViewController.xib */,
+				98097FCB17AF3D0E007E3DB5 /* SecondCell.xib */,
+				98097FCF17AF5322007E3DB5 /* resources */,
+				98A3666817AB6E78003156C5 /* Supporting Files */,
+			);
+			path = YKImageCacherDemo;
+			sourceTree = "<group>";
+		};
+		98A3666817AB6E78003156C5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				98A3666917AB6E78003156C5 /* YKImageCacherDemo-Info.plist */,
+				98A3666A17AB6E78003156C5 /* InfoPlist.strings */,
+				98A3666D17AB6E78003156C5 /* main.m */,
+				98A3666F17AB6E78003156C5 /* YKImageCacherDemo-Prefix.pch */,
+				98A3667317AB6E78003156C5 /* Default.png */,
+				98A3667517AB6E78003156C5 /* Default@2x.png */,
+				98A3667717AB6E78003156C5 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		98A3669217AB6E84003156C5 /* YKImageCacher */ = {
+			isa = PBXGroup;
+			children = (
+				98A3669617AB784A003156C5 /* Support */,
+				98A3669317AB6EAF003156C5 /* YKImageCacher.h */,
+				98A3669417AB6EAF003156C5 /* YKImageCacher.m */,
+			);
+			name = YKImageCacher;
+			sourceTree = "<group>";
+		};
+		98A3669617AB784A003156C5 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				98A3669717AB784A003156C5 /* NSString */,
+			);
+			name = Support;
+			path = ../YKImageCacher/Support;
+			sourceTree = "<group>";
+		};
+		98A3669717AB784A003156C5 /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				98A3669817AB784A003156C5 /* NSString+Hash.h */,
+				98A3669917AB784A003156C5 /* NSString+Hash.m */,
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		98A3665D17AB6E78003156C5 /* YKImageCacherDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98A3668F17AB6E78003156C5 /* Build configuration list for PBXNativeTarget "YKImageCacherDemo" */;
+			buildPhases = (
+				98A3665A17AB6E78003156C5 /* Sources */,
+				98A3665B17AB6E78003156C5 /* Frameworks */,
+				98A3665C17AB6E78003156C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YKImageCacherDemo;
+			productName = YKImageCacherDemo;
+			productReference = 98A3665E17AB6E78003156C5 /* YKImageCacherDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98A3665617AB6E78003156C5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = York;
+			};
+			buildConfigurationList = 98A3665917AB6E78003156C5 /* Build configuration list for PBXProject "YKImageCacherDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 98A3665517AB6E78003156C5;
+			productRefGroup = 98A3665F17AB6E78003156C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				98A3665D17AB6E78003156C5 /* YKImageCacherDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		98A3665C17AB6E78003156C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98A3666C17AB6E78003156C5 /* InfoPlist.strings in Resources */,
+				98A3667417AB6E78003156C5 /* Default.png in Resources */,
+				98A3667617AB6E78003156C5 /* Default@2x.png in Resources */,
+				98A3667817AB6E78003156C5 /* Default-568h@2x.png in Resources */,
+				98A3667D17AB6E78003156C5 /* first.png in Resources */,
+				98A3667F17AB6E78003156C5 /* first@2x.png in Resources */,
+				98A3668417AB6E78003156C5 /* second.png in Resources */,
+				98A3668617AB6E78003156C5 /* second@2x.png in Resources */,
+				98A3668917AB6E78003156C5 /* FirstViewController.xib in Resources */,
+				98A3668C17AB6E78003156C5 /* SecondViewController.xib in Resources */,
+				98A3669C17AB8A7C003156C5 /* unit.png in Resources */,
+				98097FCC17AF3D0E007E3DB5 /* SecondCell.xib in Resources */,
+				98097FCE17AF41AE007E3DB5 /* Images.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		98A3665A17AB6E78003156C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98A3666E17AB6E78003156C5 /* main.m in Sources */,
+				98A3667217AB6E78003156C5 /* AppDelegate.m in Sources */,
+				98A3667B17AB6E78003156C5 /* FirstViewController.m in Sources */,
+				98A3668217AB6E78003156C5 /* SecondViewController.m in Sources */,
+				98A3669517AB6EAF003156C5 /* YKImageCacher.m in Sources */,
+				98A3669A17AB784A003156C5 /* NSString+Hash.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		98A3666A17AB6E78003156C5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98A3666B17AB6E78003156C5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		98A3668717AB6E78003156C5 /* FirstViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98A3668817AB6E78003156C5 /* en */,
+			);
+			name = FirstViewController.xib;
+			sourceTree = "<group>";
+		};
+		98A3668A17AB6E78003156C5 /* SecondViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98A3668B17AB6E78003156C5 /* en */,
+			);
+			name = SecondViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		98A3668D17AB6E78003156C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		98A3668E17AB6E78003156C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		98A3669017AB6E78003156C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YKImageCacherDemo/YKImageCacherDemo-Prefix.pch";
+				INFOPLIST_FILE = "YKImageCacherDemo/YKImageCacherDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		98A3669117AB6E78003156C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YKImageCacherDemo/YKImageCacherDemo-Prefix.pch";
+				INFOPLIST_FILE = "YKImageCacherDemo/YKImageCacherDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		98A3665917AB6E78003156C5 /* Build configuration list for PBXProject "YKImageCacherDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98A3668D17AB6E78003156C5 /* Debug */,
+				98A3668E17AB6E78003156C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98A3668F17AB6E78003156C5 /* Build configuration list for PBXNativeTarget "YKImageCacherDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98A3669017AB6E78003156C5 /* Debug */,
+				98A3669117AB6E78003156C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 98A3665617AB6E78003156C5 /* Project object */;
+}
