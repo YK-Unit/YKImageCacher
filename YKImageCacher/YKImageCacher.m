@@ -197,7 +197,9 @@ static YKImageCacher *_ykCacher = nil;
 {
     [self scheduleBlock:^{
         NSData *imageData = [NSData dataWithContentsOfURL:imageURL];
-        if (imageData) {
+        //用于判断获取的是不是正确的image文件数据
+        UIImage *img = [UIImage imageWithData:imageData];
+        if (img) {
             [self createFileInCurrentCacheDirectory:imageURL contents:imageData attributes:nil];
         }
     }];
@@ -207,8 +209,9 @@ static YKImageCacher *_ykCacher = nil;
 {
     [self scheduleBlock:^{
         NSData *imageData = [NSData dataWithContentsOfURL:imageURL];
-        
-        if (imageData) {
+        //用于判断获取的是不是正确的image文件数据
+        UIImage *img = [UIImage imageWithData:imageData];
+        if (img) {
             [self createFileInCurrentCacheDirectory:imageURL contents:imageData attributes:nil];
             if (finishedHandler) {
                 dispatch_async(dispatch_get_main_queue(),^{
