@@ -14,6 +14,8 @@
 #define defaultCacheDirectory @"com.york.unit"
 #define CurrentCacheDirectoryName @"name_of_current_cache_directory"
 
+static void *const TaskQueueIdentityKey = (void *)&TaskQueueIdentityKey;
+
 @interface YKImageCacher(Private)
 - (BOOL)createCacheDirectory:(NSString *)directoryName;
 - (BOOL)removeCacheDirectory:(NSString *)directoryName;
@@ -21,6 +23,7 @@
 - (NSString *)path4FileURLInCurrentCacheDirectory:(NSURL *)fileURL;
 - (BOOL)createFileInCurrentCacheDirectory:(NSURL *)fileURL contents:(NSData *)contents attributes:(NSDictionary *)attributes;
 
+- (BOOL)isOnTaskQueue;
 - (void)scheduleBlock:(dispatch_block_t)block;
 
 @end
@@ -37,6 +40,9 @@ static YKImageCacher *_ykCacher = nil;
         self = [super init];
         if (self) {
             _taskQueue = dispatch_queue_create(class_getName([self class]), NULL);
+            void *nonNullValue = TaskQueueIdentityKey; // Whatever, just not null
+            dispatch_queue_set_specific(_taskQueue, TaskQueueIdentityKey, nonNullValue, NULL);
+            
             NSString *currentCacheDirectoryName = [[NSUserDefaults standardUserDefaults] objectForKey:CurrentCacheDirectoryName];
             if (currentCacheDirectoryName == nil) {
                 [self setCacheDirectory:defaultCacheDirectory];
@@ -127,15 +133,29 @@ static YKImageCacher *_ykCacher = nil;
 }
 
 #pragma mark scheduleBlock
+- (BOOL)isOnTaskQueue
+{
+//    BOOL flag = dispatch_get_current_queue() == _taskQueue;
+//    return flag;
+    /*
+     because 'dispatch_get_current_queue' is deprecated in iOS6.0+,
+     so used dispatch_queue_set_specific & dispatch_get_specific to
+     verify the queue
+     */
+
+    BOOL flag = dispatch_get_specific(TaskQueueIdentityKey) != NULL;
+    return flag;
+}
+
 - (void)scheduleBlock:(dispatch_block_t)block
 {
-	dispatch_async(_taskQueue, ^{
-		NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
-		
-		block();
-		
-		[pool drain];
-	});
+    dispatch_async(_taskQueue, ^{
+        NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+        
+        block();
+        
+        [pool drain];
+    });
 }
 
 #pragma mark-
@@ -208,6 +228,8 @@ static YKImageCacher *_ykCacher = nil;
 - (void)addImageCachedTask:(NSURL *)imageURL withFinishedHandler:(void(^)(NSURL *imageURL))finishedHandler
 {
     [self scheduleBlock:^{
+        NSAssert([self isOnTaskQueue], @"Invoked on incorrect queue");
+
         NSData *imageData = [NSData dataWithContentsOfURL:imageURL];
         //用于判断获取的是不是正确的image文件数据
         UIImage *img = [UIImage imageWithData:imageData];
