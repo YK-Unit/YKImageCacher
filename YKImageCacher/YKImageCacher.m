@@ -143,8 +143,13 @@ static YKImageCacher *_ykCacher = nil;
      verify the queue
      */
 
+/*---way one---*/
     BOOL flag = dispatch_get_specific(TaskQueueIdentityKey) != NULL;
     return flag;
+    
+/*---way two---*/
+//    BOOL flag = dispatch_get_specific(TaskQueueIdentityKey) == TaskQueueIdentityKey;
+//    return flag;
 }
 
 - (void)scheduleBlock:(dispatch_block_t)block
